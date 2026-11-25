@@ -1,0 +1,28 @@
+# Function to return the sum of two numbers
+def addition(a, b):
+return a + b
+
+# Function to return the product of two numbers
+def multiplication(a, b):
+return a * b
+
+# Accept two numbers from the user
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+
+# Give the user options to choose an operation
+print("\nChoose an operation:")
+print("1. Addition")
+print("2. Multiplication")
+
+choice = int(input("Enter your choice (1 or 2): "))
+
+# Call the respective function using conditional statements
+if choice == 1:
+result = addition(num1, num2)
+print("The sum is:", result)
+elif choice == 2:
+result = multiplication(num1, num2)
+print("The product is:", result)
+else:
+print("Invalid choice! Please enter 1 or 2.")
